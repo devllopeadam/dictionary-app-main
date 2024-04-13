@@ -3,7 +3,7 @@
 <h1 align='center'>📕Dictionary App with color theme switcher and font selection🚀</h1>
 <div align="center">
   <h3>
-    <a href="https://catherineisonline.github.io/rest-countries/" color="white">
+    <a href="https://dictionary-app-main.vercel.app/" color="white">
       Live
     </a>
     <span> | </span>
