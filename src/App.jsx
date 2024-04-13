@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Header from "./components/Header";
 import { Confused, NewWindow, Play, Search } from "./assets";
 import { useEffect, useState } from "react";

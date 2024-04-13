@@ -1,8 +1,38 @@
-# React + Vite
+![Rest Countries](./src/assets/screenshot.webp)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align='center'>📕Dictionary App with color theme switcher and font selection🚀</h1>
+<div align="center">
+  <h3>
+    <a href="https://catherineisonline.github.io/rest-countries/" color="white">
+      Live
+    </a>
+    <span> | </span>
+    <a href="https://github.com/devllopeadam/dictionary-app-main">
+      Solution
+    </a>
+  </h3>
+</div>
+<br>
 
-Currently, two official plugins are available:
+## About The Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Users should be able to:
+
+1. Search for words using the input field
+2. See the Free Dictionary API's response for the searched word
+3. See a form validation message when trying to submit a blank form
+4. Play the audio file for a word when it's available
+5. Switch between serif, sans serif, and monospace fonts
+6. Switch between light and dark themes
+
+I do not have access to the Figma sketch so the design is not pixel-perfect.
+
+## Built with
+
+- CSS custom properties
+- Flex
+- Dictionary API <a href="https://api.dictionaryapi.dev/api/v2/entries/en/Keyboard"> Link to the api </a>
+- react JS
+- vite
+- Framer Motion
+- tailwind
