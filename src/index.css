@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.light {
+  --toggler: #757575;
+  --search: #F4F4F4;
+  --info: #050505;
+  --fonts: #FFFFFF;
+}
+
+.dark {
+  --toggler: #A445ED;
+  --search: #1F1F1F;
+  --info: #FFFFFF;
+  --fonts: #1f1f1f;
+}
+
+[data-font="mono"] {
+  font-family: "Roboto Mono", monospace !important;
+}
+
+[data-font="serif"] {
+  font-family: "Lora", serif !important;
+}
+
+[data-font="sans-serif"] {
+  font-family: "Inter", sans-serif !important;
+}
+
+p,
+h1,
+h2,
+p,
+span {
+  transition-duration: 300ms;
+}
