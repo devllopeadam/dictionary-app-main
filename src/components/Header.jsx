@@ -47,9 +47,7 @@ const Header = () => {
           <div
             className="flex gap-3 items-center cursor-pointer"
             onClick={() => setShow(!show)}>
-            <p className="text-[18px] text-info font-bold">
-              {font[0].toUpperCase() + font.slice(1).toLowerCase()}
-            </p>
+            <p className="text-[18px] text-info font-bold">{font}</p>
             <img
               className="h-[13px] w-[13px]"
               src={ArrowDown}
