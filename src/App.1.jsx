@@ -1,10 +1,9 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import Header from "./components/Header";
 import { Confused, NewWindow, Play, Search } from "./assets";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-function App() {
+export function App() {
   const [error, setError] = useState(false);
   const [noDefinition, setNoDefinition] = useState(false);
   const [inputValue, setInputValue] = useState("good");
@@ -141,10 +140,10 @@ function App() {
             </div>
             <div className="flex flex-col gap-6">
               {data &&
-                data[0].meanings.map((meaning, index) => {
+                data[0].meanings.map((meaning) => {
                   return (
                     <div
-                      key={index}
+                      key={meaning.partOfSpeech}
                       className="flex flex-col">
                       <div className="flex flex-col mb-6">
                         <h2 className="flex gap-3 text-[23px] font-bold italic items-center text-info">
@@ -224,5 +223,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
