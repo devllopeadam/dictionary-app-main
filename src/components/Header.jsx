@@ -45,7 +45,9 @@ const Header = () => {
           <div
             className="flex gap-3 items-center cursor-pointer"
             onClick={() => setShow(!show)}>
-            <p className="text-[18px] text-info font-bold">{font}</p>
+            <p className="text-[18px] text-[#050505] dark:text-[#FFFFFF] font-bold">
+              {font ? font : "serif"}
+            </p>
             <img
               className="h-[13px] w-[13px]"
               src={ArrowDown}
@@ -59,23 +61,23 @@ const Header = () => {
               exit={{ opacity: 0, scale: 0.7, y: 50 }}
               tabIndex={1}
               onBlur={() => setShow(false)}
-              className="p-5 bg-fonts absolute rounded-lg shadow-xl top-[140%] right-0 w-[175px] z-[100]">
+              className="p-5 bg-[#FFFFFF] dark:bg-[#1f1f1f] absolute rounded-lg shadow-xl top-[140%] right-0 w-[175px] z-[100]">
               <p
-                className="text-info text-[17px] font-medium font-serif pb-3 cursor-pointer hover:text-purple-500 duration-300"
+                className="text-[#050505] dark:text-[#fff] text-[17px] font-medium font-serif pb-3 cursor-pointer hover:text-purple-500 duration-300"
                 onClick={() => {
                   handleFont("serif");
                 }}>
                 Serif
               </p>
               <p
-                className="text-info text-[17px] font-medium font-sans-serif pb-3 cursor-pointer hover:text-purple-500 duration-300"
+                className="text-[#050505] dark:text-[#fff] text-[17px] font-medium font-sans-serif pb-3 cursor-pointer hover:text-purple-500 duration-300"
                 onClick={() => {
                   handleFont("sans-serif");
                 }}>
                 Sans Serif
               </p>
               <p
-                className="text-info text-[17px] font-medium font-mono cursor-pointer hover:text-purple-500 duration-300"
+                className="text-[#050505] dark:text-[#fff] text-[17px] font-medium font-mono cursor-pointer hover:text-purple-500 duration-300"
                 onClick={() => {
                   handleFont("mono");
                 }}>
@@ -86,14 +88,18 @@ const Header = () => {
         </div>
         <div className="flex gap-4 items-center cursor-pointer">
           <div
-            className="relative bg-toggler rounded-full w-[42px] h-[20px] hover:bg-purple duration-300"
+            className="relative bg-[#757575] dark:bg-[#A445ED] rounded-full w-[42px] h-[20px] hover:bg-purple duration-300"
             onClick={() => handleToggler()}>
             <span
               className={`absolute bg-white w-[14px] h-[14px] rounded-full top-[3px] duration-300 ${
                 toggler === "light" ? "left-[3px]" : "left-[25px]"
               }`}></span>
           </div>
-          <Moon className={"stroke-current text-toggler w-5 h-[22px]"} />
+          <Moon
+            className={
+              "stroke-current text-[#757575] dark:text-[#A445ED] w-5 h-[22px]"
+            }
+          />
         </div>
       </div>
     </div>

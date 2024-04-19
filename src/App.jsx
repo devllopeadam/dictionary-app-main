@@ -80,7 +80,7 @@ function App() {
       <div className="lg:w-[740px] md:w-[90%] w-[93%] max-md:px-2 flex flex-col gap-10">
         <Header />
         <div
-          className={`flex justify-between items-center gap-4 rounded-2xl px-4 md:px-5 bg-search relative ${
+          className={`flex justify-between items-center gap-4 rounded-2xl px-4 md:px-5 bg-[#F4F4F4] dark:bg-[#1F1F1F] relative ${
             error
               ? "border-red focus-within:border-red"
               : "border-transparent focus-within:border-purple"
