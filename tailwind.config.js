@@ -12,9 +12,12 @@ export default {
         "serif": ["Inter", 'sans-serif'],
         "sans-serif": ["Lora", 'serif']
       },
-      colors: {
+      backgroundColor: {
         "toggler": "var(--toggler)",
+      },
+      colors: {
         "search": "var(--search)",
+        "toggler": "var(--toggler)",
         "info": "var(--info)",
         "fonts": "var(--fonts)",
         "purple": "#A445ED",
