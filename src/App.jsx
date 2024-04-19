@@ -95,7 +95,7 @@ function App() {
             className="border-none bg-transparent outline-none h-full py-[15px] text-[20px] font-extrabold flex-1 text-info"
           />
           <Search
-            className={"cursor-pointer"}
+            className={"cursor-pointer min-w-[20px]"}
             onClick={() => handleInputValue(inputValue)}
           />
           {error && (

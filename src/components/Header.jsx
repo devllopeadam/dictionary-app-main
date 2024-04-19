@@ -17,18 +17,17 @@ const Header = () => {
     setToggler(localStorage.getItem("theme"));
   }, []);
 
+  useEffect(() => {
+    HTML.classList = toggler;
+    HTML.dataset.font = font;
+  }, [toggler, font]);
+
   const handleToggler = () => {
-    if (toggler === "light") {
-      setToggler("dark");
-      localStorage.setItem("theme", "dark");
-      HTML.classList.remove("light");
-      HTML.classList.add("dark");
-    } else {
-      setToggler("light");
-      localStorage.setItem("theme", "light");
-      HTML.classList.remove("dark");
-      HTML.classList.add("light");
-    }
+    const newTheme = toggler === "light" ? "dark" : "light";
+    setToggler(newTheme);
+    localStorage.setItem("theme", newTheme);
+    HTML.classList.toggle("light");
+    HTML.classList.toggle("dark");
   };
 
   const handleFont = (activeFont) => {
@@ -41,15 +40,12 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center text-gray-100">
       <Logo className={"stroke-current text-gray-300 w-6 md:w-8 h-[38px]"} />
-
       <div className="flex gap-6 h-[30px]">
         <div className="flex gap-3 items-center relative border-r pr-4 border-grey-100 dark:border-white">
           <div
             className="flex gap-3 items-center cursor-pointer"
             onClick={() => setShow(!show)}>
-            <p className="text-[18px] text-info font-bold">
-              {font[0].toUpperCase() + font.slice(1).toLowerCase()}
-            </p>
+            <p className="text-[18px] text-info font-bold">{font}</p>
             <img
               className="h-[13px] w-[13px]"
               src={ArrowDown}

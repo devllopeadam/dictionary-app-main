@@ -13,5 +13,5 @@ export {
   Search,
   Moon,
   Play,
-  Logo
+  Logo,
 };
